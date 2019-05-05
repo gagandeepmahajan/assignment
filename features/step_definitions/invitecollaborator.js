@@ -5,7 +5,7 @@ const delay = require('delay');
 
 module.exports = function () {
 
-    this.And(/^I Navigate to My Projects$/, function () {
+    this.When(/^I Navigate to My Projects$/, function () {
         delay(10000);
         this.driver.findElement({linkText: "Library"}).click();
         this.driver.sleep(2000);
