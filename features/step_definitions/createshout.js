@@ -12,31 +12,36 @@ module.exports = function () {
             return title;
         });
         this.driver.sleep(5000);
-
+        //Click on Log In
         this.driver.findElement({className: "button-auth button"}).click();
         this.driver.sleep(5000);
+        //Enter Username and Password
         this.driver.findElement({name: "username"}).sendKeys(username);
         this.driver.findElement({name: "password"}).sendKeys(password);
         this.driver.sleep(5000);
+        //Click on Log In
         this.driver.findElement({className: "scs sns xl"}).click();
         this.driver.sleep(5000);
     });
 
     this.When(/^I Logout from application$/, function () {
+        //Click on Profile icon
         this.driver.findElement({className: "top-bar-profile-picture"}).click();
         this.driver.sleep(5000);
+        //Click on logout
         this.driver.findElement({className: "icon-exit"}).click();
         this.driver.sleep(10000);
     });
 
     this.Then(/^Verify Create Shout button exist$/, function () {
+        //Click on Create Button
         this.driver.findElement({className: "button cta single last button-create"}).click();
         this.driver.sleep(5000);
+        //Verify Create Shout exist
         try {
-            var createshoutbutton = this.driver.findElement({className: "icon-speaker"}).isDisplayed();
+            const createshoutbutton = this.driver.findElement({className: "icon-speaker"}).isDisplayed();
         } catch (e) {
             createshoutbutton = false;
         }
     });
-
 };
