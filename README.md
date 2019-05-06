@@ -20,7 +20,7 @@ Steps to perform:
 
   npm test
  
- Please note that username and password to login can be change under feature file.
+ Note: Please see the instruction in test case for any change in test steps..
   
  version:
  -----
