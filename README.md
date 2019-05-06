@@ -19,6 +19,8 @@ Steps to perform:
 - Also execute tests using below command  
 
   npm test
+ 
+ Please note that username and password to login can be change under feature file.
   
  version:
  -----
