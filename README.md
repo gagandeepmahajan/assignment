@@ -20,7 +20,7 @@ Steps to perform:
 
   npm test
  
- Note: Please see the instruction in test case for any change in test steps..
+ Note: Please see the instruction in test case for any change in test steps.
   
  version:
  -----
