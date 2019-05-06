@@ -3,6 +3,8 @@
 Pre-requisite
 ---
 - Latest version of Chrome browser should be installed
+- Nodejs should be installed
+- Git should be installed 
 
 Steps to perform:
 -----
@@ -17,3 +19,10 @@ Steps to perform:
 - Also execute tests using below command  
 
   npm test
+  
+ version:
+ -----
+ 
+ Node: v10.15.3
+ Git: 2.21.0.windows.1
+ Chrome browser: 74.0.3729.131

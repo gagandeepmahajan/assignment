@@ -1,7 +1,7 @@
 Feature: Create Shout photo
 
   @CreateShout
-  Scenario Outline: Verify that user successfully able to publish photo to the followers
+  Scenario Outline: Verify that user is successfully able view the Create Shout button for photo shout
     Given I visit Bandlab
     When I Login to the application with <username> and <password>
     Then Verify Create Shout button exist
